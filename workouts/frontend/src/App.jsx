@@ -3,12 +3,14 @@ import { useEffect, useState } from "react";
 import WorkoutForm from "./components/WorkoutForm";
 import WorkoutList from "./components/WorkoutList";
 import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
